@@ -1,0 +1,134 @@
+\hypertarget{class_menu}{}\section{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_menu_a0540324b94e45b51182db9a30393e27b}{Menu} (const std\+::string \&\+\_\+nom)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_menu_a0540324b94e45b51182db9a30393e27b}{Menu\+::\+Menu} (Constructeur) \end{DoxyCompactList}\item 
+\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{$\sim$\+Menu} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{Menu\+::$\sim$\+Menu} (Destructeur) \end{DoxyCompactList}\item 
+int \hyperlink{class_menu_a079e0c6a24248a07993b48b310ba65ce}{Afficher} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_menu_a079e0c6a24248a07993b48b310ba65ce}{Menu\+::\+Afficher} Méthode pour créer la vue utilisateur du menu. Cette méthode attend la saisie du choix de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_menu_a6ddcaabf2fedb30f5136f3be655d60ce}{Attendre\+Appui\+Touche} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_menu_a6ddcaabf2fedb30f5136f3be655d60ce}{Menu\+::\+Attendre\+Appui\+Touche}  Méthode statique pour attendre l\textquotesingle{}appui sur une touche du clavier. Le buffer d\textquotesingle{}entrée est vidé, l\textquotesingle{}écran est effacé après l\textquotesingle{}action sur le clavier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_menu_a99574cb51606811f697854859bc1ccc1}{nom}
+\begin{DoxyCompactList}\small\item\em nom du fichier à ouvrir pour créer le menu \end{DoxyCompactList}\item 
+int \hyperlink{class_menu_a745c540589015b573d8214e1080e2a8e}{longueur\+Max}
+\begin{DoxyCompactList}\small\item\em La plus grande longueur d\textquotesingle{}un item. \end{DoxyCompactList}\item 
+int \hyperlink{class_menu_ad59953635d184fefcddf95015a761187}{nb\+Options}
+\begin{DoxyCompactList}\small\item\em Nombre d\textquotesingle{}items du menu. \end{DoxyCompactList}\item 
+string $\ast$ \hyperlink{class_menu_aec975cfea9216420d5754ce2e9321390}{options}
+\begin{DoxyCompactList}\small\item\em Pointeur sur tableau des items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_a0540324b94e45b51182db9a30393e27b}\label{class_menu_a0540324b94e45b51182db9a30393e27b}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+nom }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_menu_a0540324b94e45b51182db9a30393e27b}{Menu\+::\+Menu} (Constructeur) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nom} & nom du fichier contenant les items du menu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}\label{class_menu_a831387f51358cfb88cd018e1777bc980}} 
+\index{Menu@{Menu}!````~Menu@{$\sim$\+Menu}}
+\index{````~Menu@{$\sim$\+Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{$\sim$\+Menu()}{~Menu()}}
+{\footnotesize\ttfamily Menu\+::$\sim$\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{Menu\+::$\sim$\+Menu} (Destructeur) 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_a079e0c6a24248a07993b48b310ba65ce}\label{class_menu_a079e0c6a24248a07993b48b310ba65ce}} 
+\index{Menu@{Menu}!Afficher@{Afficher}}
+\index{Afficher@{Afficher}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Afficher()}{Afficher()}}
+{\footnotesize\ttfamily int Menu\+::\+Afficher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_menu_a079e0c6a24248a07993b48b310ba65ce}{Menu\+::\+Afficher} Méthode pour créer la vue utilisateur du menu. Cette méthode attend la saisie du choix de l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Returns}
+Le choix de l\textquotesingle{}utilisateur sous la forme d\textquotesingle{}une valeur entière 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menu_a6ddcaabf2fedb30f5136f3be655d60ce}\label{class_menu_a6ddcaabf2fedb30f5136f3be655d60ce}} 
+\index{Menu@{Menu}!Attendre\+Appui\+Touche@{Attendre\+Appui\+Touche}}
+\index{Attendre\+Appui\+Touche@{Attendre\+Appui\+Touche}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Attendre\+Appui\+Touche()}{AttendreAppuiTouche()}}
+{\footnotesize\ttfamily void Menu\+::\+Attendre\+Appui\+Touche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\hyperlink{class_menu_a6ddcaabf2fedb30f5136f3be655d60ce}{Menu\+::\+Attendre\+Appui\+Touche}  Méthode statique pour attendre l\textquotesingle{}appui sur une touche du clavier. Le buffer d\textquotesingle{}entrée est vidé, l\textquotesingle{}écran est effacé après l\textquotesingle{}action sur le clavier. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_menu_a745c540589015b573d8214e1080e2a8e}\label{class_menu_a745c540589015b573d8214e1080e2a8e}} 
+\index{Menu@{Menu}!longueur\+Max@{longueur\+Max}}
+\index{longueur\+Max@{longueur\+Max}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{longueur\+Max}{longueurMax}}
+{\footnotesize\ttfamily int Menu\+::longueur\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La plus grande longueur d\textquotesingle{}un item. 
+
+\mbox{\Hypertarget{class_menu_ad59953635d184fefcddf95015a761187}\label{class_menu_ad59953635d184fefcddf95015a761187}} 
+\index{Menu@{Menu}!nb\+Options@{nb\+Options}}
+\index{nb\+Options@{nb\+Options}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{nb\+Options}{nbOptions}}
+{\footnotesize\ttfamily int Menu\+::nb\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre d\textquotesingle{}items du menu. 
+
+\mbox{\Hypertarget{class_menu_a99574cb51606811f697854859bc1ccc1}\label{class_menu_a99574cb51606811f697854859bc1ccc1}} 
+\index{Menu@{Menu}!nom@{nom}}
+\index{nom@{nom}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily string Menu\+::nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+nom du fichier à ouvrir pour créer le menu 
+
+\mbox{\Hypertarget{class_menu_aec975cfea9216420d5754ce2e9321390}\label{class_menu_aec975cfea9216420d5754ce2e9321390}} 
+\index{Menu@{Menu}!options@{options}}
+\index{options@{options}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily string$\ast$ Menu\+::options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointeur sur tableau des items. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{menu_8h}{menu.\+h}\item 
+\hyperlink{menu_8cpp}{menu.\+cpp}\end{DoxyCompactItemize}
